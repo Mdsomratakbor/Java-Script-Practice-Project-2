@@ -76,5 +76,26 @@ const menu = [
 
 const sectionCenter = document.querySelector('.section-center');
 window.addEventListener('DOMContentLoaded', function(){
-    
+  displayMenuItem(menu)
+
 })
+
+function displayMenuItem(menuItems){
+  let displayMenu = menuItems.map((item) => {
+    return `<article class="menu-item">
+                <img src="${item.img}" class="photo" alt="menu item">
+                <div class="item-info">
+                    <header>
+                        <h4>${item.title}</h4>
+                        <h4 class="price">$${item.price}</h4>
+                    </header>
+                    <p class="item-text">
+                        ${item.desc}
+                    </p>
+                </div>
+            </article>`;
+  });
+
+  displayMenu = displayMenu.join("");
+  sectionCenter.innerHTML = displayMenu;
+}
