@@ -221,7 +221,7 @@ Grocery List
 .alert {
     margin-bottom: 1rem;
     height: 1.25rem;
-    display: grid;
+    /* display: inline;*/
     align-items: center;
     text-align: center;
     font-size: 0.7rem;
@@ -372,4 +372,12 @@ Grocery List
 
 .clear-btn:hover {
     color: var(--clr-red-dark);
+}
+
+.m-l {
+    float: left;
+}
+
+.m-r {
+    float: right;
 }
