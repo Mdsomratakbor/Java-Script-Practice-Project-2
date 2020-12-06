@@ -26,6 +26,8 @@ function carousel() {
     // if (counter < 0) {
     //     counter = slides.length - 1;
     // }
+
+    // working with buttons
     if (counter < slides.length - 1) {
         nextBtn.style.display = "block"
     } else {
